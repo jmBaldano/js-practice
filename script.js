@@ -1,3 +1,4 @@
+// function for the simple math equation
 function calculateAnswer(event){
    event.preventDefault();
 
@@ -36,3 +37,18 @@ function calculateAnswer(event){
 
 }
 
+// function for a To do list
+const todoList = [];
+
+function addTodo(){
+
+    const todoInput = document.querySelector(".js-todoInput");
+    const todoName = todoInput.value;
+
+    if(todoName){
+    todoList.push(todoName);
+    todoInput.value ="";
+    }
+    document.querySelector(".js-todoDesc").innerHTML = todoList.join("<br>");
+
+}

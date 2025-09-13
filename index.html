@@ -4,7 +4,7 @@
 
 </head>
 <body>
-    <h2>Input a simple math equation, answer it, and let's check if its right</h2>
+    <h1>Input a simple math equation, answer it, and let's check if its right</h1>
     <form onsubmit="calculateAnswer(event)">
         <label for="number1">Input a number</label>   
         <input type="number" id="number1" name="number1" required>
@@ -19,7 +19,17 @@
         <input type="number" id="userAnswer" name="userAnswer" required>
         <button type="submit">Submit</button>
     </form> 
-    <p id="result"></p>
+        <p id="result"></p>
+
+   <!-- To do List -->
+        <div>
+            <h1>To do List:</h1>
+            <input type="text" placeholder="Input To do" class="js-todoInput todoInput">
+            <button onclick="addTodo()">Add</button>
+            <p class="js-todoDesc">To do Description</p>
+
+        </div>
+
 </body>
 
 <script src="script.js"> </script>
