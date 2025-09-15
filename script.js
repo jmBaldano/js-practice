@@ -49,6 +49,44 @@ function addTodo(){
     todoList.push(todoName);
     todoInput.value ="";
     }
-    document.querySelector(".js-todoDesc").innerHTML = todoList.join("<br>");
+
+    for(let i = 0; i < todoList.length; i++){
+        value = todoList[i];
+        document.querySelector(".js-todoDesc").innerHTML = todoList.join("<br>");
+
+    }
+
+    // document.querySelector(".js-todoDesc").innerHTML = todoList.join("<br>");
 
 }
+
+function getLastValue(){
+    const numbers = [10, 20, 30, 40];
+    let input = document.querySelector(".js-numInput");
+    let value = input.value;
+    if(input){
+    numbers.push(value);
+    input.value = "";
+    }
+    let lastIndex = numbers.length-2;
+    document.querySelector(".js-lastIndex").innerHTML = numbers[lastIndex];
+
+
+}
+
+/*
+function testing(){
+    const lists = [
+        'testing1',
+        'testing2',
+        'testing3',
+    ]
+
+    for (let index = 0; index <= lists.length; index++) {
+      const value = lists[index];
+        console.log(value);
+
+    }
+}
+*/
+
