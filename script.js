@@ -55,21 +55,32 @@ function addTodo(){
         document.querySelector(".js-todoDesc").innerHTML = todoList.join("<br>");
 
     }
-
+    console.log(todoList)
     // document.querySelector(".js-todoDesc").innerHTML = todoList.join("<br>");
 
 }
 
-function getLastValue(){
-    const numbers = [10, 20, 30, 40];
+// practice
+const numbers = [];
+function swapValue(){
     let input = document.querySelector(".js-numInput");
     let value = input.value;
+    let firstIndex = numbers[0];
     if(input){
     numbers.push(value);
     input.value = "";
     }
-    let lastIndex = numbers.length-2;
-    document.querySelector(".js-lastIndex").innerHTML = numbers[lastIndex];
+    if(numbers.length >= 2){
+        let lastIndex = numbers.length -1;
+        numbers[0] = numbers[lastIndex];
+        numbers[lastIndex] = firstIndex;
+        document.querySelector(".js-swapValue").innerHTML = numbers;
+    }
+    else if(numbers.length === 1){
+        input.placeholder = "Add one more number";
+    }
+
+    console.log(numbers);
 
 
 }
