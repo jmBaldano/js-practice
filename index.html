@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<style></style>
 <head>
-
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<section class="layout">
+    <div class="mathEq">
     <h1>Input a simple math equation, answer it, and let's check if its right</h1>
-    <form onsubmit="calculateAnswer(event)">
+    <div class="mathForm">
+    <form onsubmit="calculateAnswer(event)" class="formCheckAns">
         <label for="number1">Input a number</label>   
         <input type="number" id="number1" name="number1" required>
         <br>
@@ -20,24 +22,45 @@
         <button type="submit">Submit</button>
     </form> 
         <p id="result"></p>
+    </div>
+    </div>
+</section>
 
    <!-- To do List -->
-        <div>
-            <h1>To do List:</h1>
-            <input type="text" placeholder="Add To do" class="js-todoInput todoInput">
-            <button onclick="addTodo()">Add</button>
-            <p class="js-todoDesc">To do Description</p>
-
+<main class="layoutContainer">
+    <section class="layout">
+            <div class="todoList">
+                    <h1>To do List:</h1>
+                <div class="todoForm">
+                    <input type="text" placeholder="Add To do" class="js-todoInput todoInput">
+                    <button onclick="addTodo()">Add</button>
+                    <p class="js-todoDesc">To do Description</p>
+                </div>
+            </div>
+    </section>   
+    <!-- swap value practice -->
+    <section class="layout">
+        <div class="swapArr">
+                <h1>Swap the first and last value inside an array</h1>
+            <div class="swaparrForm">
+                <input type="text" placeholder="add a number" class="js-numInput">
+                <button onclick="swapValue()">add to array</button>
+                <p class="js-swapValue"></p>
+            </div>
         </div>
- <!-- Testing -->
-        <div>
-            <h1>Swap the first and last value inside an array</h1>
-            <input type="text" placeholder="add a number" class="js-numInput">
-            <button onclick="swapValue()">add to array</button>
-            <p class="js-swapValue"></p>
+    </section>
+    <section class="layout">
+        <div class="forPrac">
+                <h1>array / for loop practice</h1>
+            <div class="forpracForm">
+                <input type="number" placeholder="Input a number" class="js-increaseNumInput">
+                <button onclick="increaseNum()">add</button>
+                <p class="output"></p>
+            </div>
         </div>
-
+    </section>
+</main>
+<script src="script.js"> </script>
 </body>
 
-<script src="script.js"> </script>
 </html>

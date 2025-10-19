@@ -38,7 +38,7 @@ function calculateAnswer(event){
 }
 
 // function for a To do list
-const todoList = [];
+const todoList = JSON.parse(localStorage.getItem("list")) || [];
 
 function addTodo(){
 
@@ -57,10 +57,13 @@ function addTodo(){
     }
     console.log(todoList)
     // document.querySelector(".js-todoDesc").innerHTML = todoList.join("<br>");
-
+    localStorage.setItem("list", JSON.stringify(todoList));
 }
 
-// practice
+
+    document.querySelector(".js-todoDesc").innerHTML = todoList.join("<br>");
+
+// swap value practice
 const numbers = [];
 function swapValue(){
     let input = document.querySelector(".js-numInput");
@@ -77,13 +80,36 @@ function swapValue(){
         document.querySelector(".js-swapValue").innerHTML = numbers;
     }
     else if(numbers.length === 1){
-        input.placeholder = "Add one more number";
+        input.placeholder = "Add more number";
     }
 
     console.log(numbers);
+}
 
+
+//testing
+
+const increaseNumArray = [];
+function increaseNum(){
+    let input = document.querySelector(".js-increaseNumInput");  
+    let value = input.value;
+    if(input){
+        increaseNumArray.push(value);
+        input.value = "";
+    }
+    else if(increaseNumArray.length === 1){
+        input.placeholder = "Add more number";
+
+    }
+
+    for(let i = 0; i < increaseNumArray.length; i++){
+       increaseNumArray[i] = Number(increaseNumArray[i]) +1;
+        document.querySelector(".output").innerHTML = increaseNumArray.join(", ");
+
+    }
 
 }
+
 
 /*
 function testing(){

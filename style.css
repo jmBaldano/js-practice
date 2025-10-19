@@ -1,0 +1,115 @@
+body{
+    margin: 0px;
+
+}
+
+.layout{
+    display: grid;
+    place-items: center;
+    background-color: #f2f0ef;
+    gap: 20px;
+    
+}
+
+.layoutContainer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f0ef;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.formCheckAns{
+    display: grid;
+    text-align: center;    
+    gap: 0px;
+}
+
+.mathEq{
+    display: grid;
+    justify-content: center;
+}
+
+.mathForm{
+    background-color: #d3d3d3 ; 
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 30px 30px 30px 30px;
+}
+
+.mathForm:hover{
+    background-color:#e4e1e1;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.formCheckAns {
+
+    width: 300px;            
+    margin: 0 auto;           
+    gap: 3px;    
+    
+}
+
+.todoList{
+    display: grid;
+    text-align: center;
+}
+
+.todoForm{
+    background-color: #d3d3d3;
+    padding: 30px;
+    margin: 0px 20px 20px 20px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out ;
+}
+
+.todoForm:hover{
+    background-color: #e4e1e1;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.swapArr{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+
+.swaparrForm{
+    background-color: #d3d3d3;
+    border-radius: 20px;
+    padding: 30px;
+    transition: transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+    height: 180px;
+    align-content: center;
+}
+
+.swaparrForm:hover{
+    background-color: #e4e1e1;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.forPrac{
+    display:grid;
+    text-align: center;
+}
+
+.forpracForm{
+    background-color: #d3d3d3;
+    border-radius: 20px;
+    padding: 30px;
+    transition: transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+    height: 180px;
+    align-content:center ;
+}
+
+.forpracForm:hover{
+    background-color: #e4e1e1;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
