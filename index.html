@@ -9,17 +9,17 @@
     <div class="mathForm">
     <form onsubmit="calculateAnswer(event)" class="formCheckAns">
         <label for="number1">Input a number</label>   
-        <input type="number" id="number1" name="number1" required>
+        <input type="number" class="input" id="number1" name="number1" required>
         <br>
-        <label for="operator">Input an operator</label>
-        <input type="text" id="operator" name="operator" required>
+        <label for="operator">Input an operator (e.g. +, -, /, *)</label>
+        <input type="text" class="input" id="operator" name="operator" required>
         <br>
         <label for="number2">Input another number</label>
-        <input type="number" id="number2" name="number2" required>
+        <input type="number" class="input" id="number2" name="number2" required>
         <br><br>
         <label for="userAnswer">Input your answer</label>
-        <input type="number" id="userAnswer" name="userAnswer" required>
-        <button type="submit">Submit</button>
+        <input type="number" class="input" id="userAnswer" name="userAnswer" required>
+        <button type="submit" class="bttn">Submit</button>
     </form> 
         <p id="result"></p>
     </div>
@@ -32,8 +32,8 @@
             <div class="todoList">
                     <h1>To do List:</h1>
                 <div class="todoForm">
-                    <input type="text" placeholder="Add To do" class="js-todoInput todoInput">
-                    <button onclick="addTodo()">Add</button>
+                    <input type="text" class="input" placeholder="Add To do" class="js-todoInput todoInput">
+                    <button onclick="addTodo()" class="bttn">Add</button>
                     <p class="js-todoDesc">To do Description</p>
                 </div>
             </div>
@@ -43,8 +43,8 @@
         <div class="swapArr">
                 <h1>Swap the first and last value inside an array</h1>
             <div class="swaparrForm">
-                <input type="text" placeholder="add a number" class="js-numInput">
-                <button onclick="swapValue()">add to array</button>
+                <input type="text" class="input" placeholder="add a number" class="js-numInput">
+                <button onclick="swapValue()" class="bttn">add to array</button>
                 <p class="js-swapValue"></p>
             </div>
         </div>
@@ -53,8 +53,8 @@
         <div class="forPrac">
                 <h1>array / for loop practice</h1>
             <div class="forpracForm">
-                <input type="number" placeholder="Input a number" class="js-increaseNumInput">
-                <button onclick="increaseNum()">add</button>
+                <input type="number" class="input" placeholder="Input a number" class="js-increaseNumInput">
+                <button onclick="increaseNum()" class="bttn">add</button>
                 <p class="output"></p>
             </div>
         </div>

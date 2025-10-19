@@ -43,6 +43,32 @@ body{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.input{
+    border-radius: 5px;
+    border:none;
+    transition: transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+.input:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.bttn{
+    border:none;
+    margin: 5px;
+    height: 40px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+
+}
+.bttn:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 .formCheckAns {
 
     width: 300px;            
